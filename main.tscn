@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://b07owndon0rsf"]
+
+[ext_resource type="Texture2D" uid="uid://8p31lja401do" path="res://icon.svg" id="1_sdgfk"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(561, 299)
+texture = ExtResource("1_sdgfk")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 515.0
+offset_top = 373.0
+offset_right = 603.0
+offset_bottom = 399.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Godot 4.1.3"
