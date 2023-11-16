@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1i05l80n55vk"]
+[gd_scene load_steps=7 format=3 uid="uid://c1i05l80n55vk"]
 
 [ext_resource type="Texture2D" uid="uid://8p31lja401do" path="res://assets/icon.svg" id="1_b78n4"]
 [ext_resource type="Script" path="res://menu/main_menu.gd" id="1_h2g7h"]
 [ext_resource type="PackedScene" uid="uid://cntiwueyltayq" path="res://menu/menu_background.tscn" id="1_hr51q"]
+[ext_resource type="PackedScene" uid="uid://r275w3l6osq3" path="res://components/ui/button_scene.tscn" id="4_ff1qp"]
+[ext_resource type="PackedScene" uid="uid://knw1vjjul4se" path="res://menu/how_to_play.tscn" id="5_ndg53"]
+[ext_resource type="PackedScene" uid="uid://svuyycpd10mr" path="res://menu/settings.tscn" id="6_nqo5x"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -54,13 +57,12 @@ layout_mode = 2
 layout_mode = 2
 text = "Start"
 
-[node name="HowToPlayButton" type="Button" parent="Container/ButtonContainer"]
+[node name="HowToPlayButtonScene" parent="Container/ButtonContainer" instance=ExtResource("4_ff1qp")]
 layout_mode = 2
 text = "How to Play"
+target_scene = ExtResource("5_ndg53")
 
-[node name="SettingButton" type="Button" parent="Container/ButtonContainer"]
+[node name="SettingsButtonScene" parent="Container/ButtonContainer" instance=ExtResource("4_ff1qp")]
 layout_mode = 2
 text = "Settings"
-
-[connection signal="pressed" from="Container/ButtonContainer/HowToPlayButton" to="." method="_on_how_to_play_button_pressed"]
-[connection signal="pressed" from="Container/ButtonContainer/SettingButton" to="." method="_on_setting_button_pressed"]
+target_scene = ExtResource("6_nqo5x")
