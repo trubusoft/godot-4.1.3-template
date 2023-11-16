@@ -1,7 +1,7 @@
 # Given a `target_scene`, this component will change scene to it when being clicked
 
 
-extends Control
+extends Button
 
 
 @export var target_scene: PackedScene
