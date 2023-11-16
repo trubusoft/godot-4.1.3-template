@@ -4,12 +4,14 @@
 extends Button
 
 
-@export var target_scene: PackedScene
+@export var target_scene: String
 
 
 func _ready():
-	assert(target_scene != null, "target_scene must not be null")
+	if target_scene == '':
+		push_warning('target_scene path sould not be empty')
 
 
 func _on_pressed():
-	get_tree().change_scene_to_packed(target_scene)
+	if target_scene != '':
+		get_tree().change_scene_to_file(target_scene)
