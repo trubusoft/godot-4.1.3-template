@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c1i05l80n55vk"]
 
-[ext_resource type="Texture2D" uid="uid://8p31lja401do" path="res://assets/icon.svg" id="1_104un"]
+[ext_resource type="Texture2D" uid="uid://8p31lja401do" path="res://assets/icon.svg" id="1_b78n4"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -32,7 +32,7 @@ theme_override_constants/separation = 20
 
 [node name="BrandingIcon" type="TextureRect" parent="Container/HeadingContainer"]
 layout_mode = 2
-texture = ExtResource("1_104un")
+texture = ExtResource("1_b78n4")
 expand_mode = 4
 
 [node name="Title" type="Label" parent="Container/HeadingContainer"]
