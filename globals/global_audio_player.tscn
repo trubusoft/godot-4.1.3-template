@@ -8,3 +8,4 @@ script = ExtResource("1_8sl07")
 
 [node name="MouseClickPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_h2dd7")
+volume_db = -10.0
